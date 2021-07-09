@@ -1,0 +1,28 @@
+l=[]
+x=int(input("enter length of your list : "))
+
+for i in range[x]:
+    n=int(input(" , "))
+    l.append(n)
+    
+t=(l)
+x=len(t)
+target=int(input("enter target : "))
+
+dict={}
+pair=[1,2]
+for i in range[x]:
+    key=i+1 
+    dict.update({key : pair})
+    
+key=1
+for i in range[x]:
+    j=i+1
+    for j in range[x]:
+        if(t[i]+t[j]==target):
+            pair=[i,j]
+            dict.update({key : pair })
+            key=key+1 
+            
+print(dict)
+    
