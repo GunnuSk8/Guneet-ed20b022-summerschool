@@ -1,0 +1,15 @@
+import numpy as np 
+import math as m
+y_=np.random.rand(1,100)
+y=np.zeros((1,100))
+
+for i in range(100):
+    if(y_[0][i]>0.5):
+     y[0][i]=1
+s=0 #sum
+for i in range(100):
+    s=s+(y[0][i]*m.log(y_[0][i]))+((1-y[0][i])*m.log(1-y_[0][i]))
+    
+O=s/(-100*m.log(2))
+
+print(O)
